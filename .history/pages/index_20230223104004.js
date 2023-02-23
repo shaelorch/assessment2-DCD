@@ -81,7 +81,7 @@ export default function Home() {
 
         return (
           <div className={styles.card} key={index} >
-              <div style={{display:'flex', flexDirection:'row', justifyContent:'space-between', marginRight:'5%', alignContent:'center'}}>
+              <div style={{display:'flex', flexDirection:'row', justifyContent:'space-between', marginRight:20}}>
               <Image style={{}}
               src={icon}
               alt="logo"     
@@ -89,15 +89,11 @@ export default function Home() {
               height={80}
               priority
                   />
-                  <div style={{alignSelf:'center', marginRight:180}}>
-                    <div>{weather.main.temp.toFixed(1)} °C</div>
-                    <div>{weather.weather[0].main}</div>
-                  </div>
                    <p>
                   {day} <br/> {month} {weather.dt_txt.substr(8,2)}, {weather.dt_txt.substr(0,4)}
                   </p></div>
-                  
-                
+                <div>{weather.main.temp.toFixed(1)} °C</div>
+                <div>{weather.weather[0].main}</div>
            
            
              

@@ -89,7 +89,7 @@ export default function Home() {
               height={80}
               priority
                   />
-                  <div style={{alignSelf:'center', marginRight:180}}>
+                  <div>
                     <div>{weather.main.temp.toFixed(1)} °C</div>
                     <div>{weather.weather[0].main}</div>
                   </div>

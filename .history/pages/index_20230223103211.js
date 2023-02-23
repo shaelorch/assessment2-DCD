@@ -80,28 +80,24 @@ export default function Home() {
         var day = days[now.getDate()];
 
         return (
-          <div className={styles.card} key={index} >
-              <div style={{display:'flex', flexDirection:'row', justifyContent:'space-between', marginRight:'5%', alignContent:'center'}}>
-              <Image style={{}}
+          <WeatherCont  key={index} >
+            
+              <Image 
               src={icon}
               alt="logo"     
-              width={80}
-              height={80}
+              width={120}
+              height={120}
               priority
                   />
-                  <div style={{alignSelf:'center', marginRight:180}}>
-                    <div>{weather.main.temp.toFixed(1)} °C</div>
-                    <div>{weather.weather[0].main}</div>
-                  </div>
                    <p>
                   {day} <br/> {month} {weather.dt_txt.substr(8,2)}, {weather.dt_txt.substr(0,4)}
-                  </p></div>
-                  
-                
+                </p>
+                <div>{weather.main.temp.toFixed(1)} °C</div>
+                <div>{weather.weather[0].main}</div>
            
            
              
-          </div>
+          </WeatherCont>
         )
         }
       })
