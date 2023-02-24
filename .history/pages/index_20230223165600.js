@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from 'react';
 import styles from '../styles/Home.module.css';
 import axios from 'axios';
 import WeatherCont from '../comps/weatherCard';
-import NavBar from '../comps/Navbar';
 
 export default function Home() {
 
@@ -14,7 +13,6 @@ export default function Home() {
   const url = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&units=${units}&appid=${apiKey}`;
 
   const [data, setData] = useState();
-
   const grabWeather = useRef(false);
 
   const fetchWeather = async () => {
@@ -81,8 +79,9 @@ export default function Home() {
         var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
         var day = days[now.getDate()];
 
-        return ( <div className={styles.card} key={index} >
-            <div className={styles.cardContent}>
+        return (
+          <div className={styles.card} key={index} >
+            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginRight: '5%', alignContent: 'center' }}>
               <Image style={{}}
                 src={icon}
                 alt="logo"
@@ -97,19 +96,18 @@ export default function Home() {
               <p>
                 {day} <br /> {month} {weather.dt_txt.substr(8, 2)}, {weather.dt_txt.substr(0, 4)}
               </p></div>
+
+
+
+
+
           </div>
         )
       }
-
-    
     })
     console.log(arrayOfDays);
-        setData(weatherData);
-      
+    setData(weatherData);
   }
-
-  
-  
 
   useEffect(() => {
     if (grabWeather.current === true) {
@@ -131,42 +129,28 @@ export default function Home() {
       <Head>
 
       </Head>
-    
-        <NavBar />
-  
-      
-
       <main className={styles.main}>
         <div className={styles.description}>
-          <h4>
-            Vancouver, BC
-           
-          </h4>
-          
+          <p>
+            Vancouver, BC. weather
+            Last Update: {date}
+          </p>
+          <div>
+            <a>
+              by Shae Lorch
+            </a>
+          </div>
         </div>
 
-        {/* <div className={styles.mainCard}>
-          <div className={styles.mainCardContent}>
-            {data}
-          </div>
-          
-        </div> */}
+        <div className={styles.mainCard}>
+          {data[0]}
+        </div>
 
         <div className={styles.grid}>
-          <div>
-            {data}
-          </div>
-          
+          {data}
         </div>
 
       </main>
-      <footer className={styles.footer}>
-      <div>
-            <a>
-              Developed by Shae Lorch &#169;
-            </a>
-          </div>
-      </footer>
 
     </>
 

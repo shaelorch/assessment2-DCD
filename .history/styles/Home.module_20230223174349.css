@@ -26,7 +26,6 @@
   border-radius:20px;
   padding-left:5%;
   margin-bottom: 8%;
-  padding:10px;
 }
 
 .mainCardContent {
@@ -100,7 +99,7 @@
 }
 
 .description {
-  margin-top: -15%;
+  margin-top: -20%;
   line-height: 1.5;
   font-size: 1.5rem;
 }

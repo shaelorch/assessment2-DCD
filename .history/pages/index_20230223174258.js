@@ -138,10 +138,10 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.description}>
-          <h4>
+          <p>
             Vancouver, BC
            
-          </h4>
+          </p>
           
         </div>
 

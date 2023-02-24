@@ -131,17 +131,17 @@ export default function Home() {
       <Head>
 
       </Head>
-    
+      <div style={{position:'fixed'}}>
         <NavBar />
-  
+      </div>
       
 
       <main className={styles.main}>
         <div className={styles.description}>
-          <h4>
-            Vancouver, BC
-           
-          </h4>
+          <p>
+            Vancouver, BC. weather
+            Last Update: {date}
+          </p>
           
         </div>
 

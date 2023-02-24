@@ -26,37 +26,12 @@
   border-radius:20px;
   padding-left:5%;
   margin-bottom: 8%;
-  padding:10px;
-}
-
-.mainCardContent {
-
-  display: flex;
-  flex-direction: column;
-  
-}
-
-.cardContent {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-right: 5%;
   align-content:center;
 }
-
-.logoCont {
-  margin-top:-20px;
-  padding-left: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #296EB4;
-  align-content: center;
-  align-items: center;
-  padding-right: 20px;
-  
-}
-
 
 
 .footer {
@@ -66,8 +41,6 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
-  background-color: #296EB4;
-  font-family: quicksand, cursive;
 }
 
 .footer a {
@@ -100,7 +73,7 @@
 }
 
 .description {
-  margin-top: -15%;
+  margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
 }
@@ -128,7 +101,6 @@
   width:338px;
   background: rgb(255,255,255);
   background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(136,198,255,1) 47%);
-  border-radius: 20px;;
 }
 
 

@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from 'react';
 import styles from '../styles/Home.module.css';
 import axios from 'axios';
 import WeatherCont from '../comps/weatherCard';
-import NavBar from '../comps/Navbar';
 
 export default function Home() {
 
@@ -131,26 +130,25 @@ export default function Home() {
       <Head>
 
       </Head>
-    
-        <NavBar />
-  
-      
-
       <main className={styles.main}>
         <div className={styles.description}>
-          <h4>
-            Vancouver, BC
-           
-          </h4>
-          
+          <p>
+            Vancouver, BC. weather
+            Last Update: {date}
+          </p>
+          <div>
+            <a>
+              by Shae Lorch
+            </a>
+          </div>
         </div>
 
-        {/* <div className={styles.mainCard}>
+        <div className={styles.mainCard}>
           <div className={styles.mainCardContent}>
-            {data}
+            {data[1]}
           </div>
           
-        </div> */}
+        </div>
 
         <div className={styles.grid}>
           <div>
@@ -160,13 +158,6 @@ export default function Home() {
         </div>
 
       </main>
-      <footer className={styles.footer}>
-      <div>
-            <a>
-              Developed by Shae Lorch &#169;
-            </a>
-          </div>
-      </footer>
 
     </>
 

@@ -26,7 +26,6 @@
   border-radius:20px;
   padding-left:5%;
   margin-bottom: 8%;
-  padding:10px;
 }
 
 .mainCardContent {
@@ -44,19 +43,6 @@
   align-content:center;
 }
 
-.logoCont {
-  margin-top:-20px;
-  padding-left: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #296EB4;
-  align-content: center;
-  align-items: center;
-  padding-right: 20px;
-  
-}
-
 
 
 .footer {
@@ -66,8 +52,6 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
-  background-color: #296EB4;
-  font-family: quicksand, cursive;
 }
 
 .footer a {
@@ -100,7 +84,7 @@
 }
 
 .description {
-  margin-top: -15%;
+  margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
 }

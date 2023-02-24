@@ -131,26 +131,23 @@ export default function Home() {
       <Head>
 
       </Head>
-    
-        <NavBar />
-  
-      
+      <NavBar/>
 
       <main className={styles.main}>
         <div className={styles.description}>
-          <h4>
-            Vancouver, BC
-           
-          </h4>
+          <p>
+            Vancouver, BC. weather
+            Last Update: {date}
+          </p>
           
         </div>
 
-        {/* <div className={styles.mainCard}>
+        <div className={styles.mainCard}>
           <div className={styles.mainCardContent}>
-            {data}
+            {data[0]}
           </div>
           
-        </div> */}
+        </div>
 
         <div className={styles.grid}>
           <div>
