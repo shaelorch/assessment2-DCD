@@ -129,8 +129,7 @@ export default function Home() {
 
     <>
       <Head>
-      <link rel="icon" type="image/svg" sizes="16x16" href="/clear.svg"/>
-
+     <link rel="favicon" href="/favicon.ico" />
       </Head>
     
         <NavBar />
